@@ -3,11 +3,13 @@
 *bolt是go语言写的一个基于b+树的kv数据库，简单易使用*
 
 # 相关概念图
+![page](https://github.com/user-attachments/assets/8072d7ee-46e2-4ece-bd2f-bf10e2f45aac)
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/52454d16007a4cceb91cce73e56639a0~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6ZmI5aKo:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMjU0MTcyNjYxMTgwNDIwMCJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725721371&x-orig-sign=gI0IMCRLZjZBHSirhKy0AHz988Q%3D)
+
 *如图，展示了page相关的定义与结构*
+![bucket](https://github.com/user-attachments/assets/a5e723a3-0abf-4c7a-89e4-e8ee352f1d1b)
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/97c6043371ec4b5abfd8fdec02102312~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6ZmI5aKo:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMjU0MTcyNjYxMTgwNDIwMCJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725721371&x-orig-sign=mVT3KMLBLU34CXR%2FQQRMbNfsP5s%3D)
+
 *如图，展示了bolt的底层存储结构，bucket就是一颗b+树，然后基于其的结构图，很好的介绍了b+树的结构*
 
 # 对代码的简单理解（结合测试用例理解）
